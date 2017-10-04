@@ -1,7 +1,7 @@
 #!/bin/bash
 docker push andkul/sample-node
 
-ssh deploy@35.187.30.81 << EOF
+ssh mr_and_kul@35.195.210.31  << EOF
 docker pull andkul/sample-node:latest
 docker stop web || true
 docker rm web || true
